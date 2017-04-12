@@ -6,7 +6,7 @@
 body {
 	width: 100%;
 	min-height: 100%;
-	color:#ffff;
+	color:#ffffff;
 	background-color: #ebe3dc;
 	font: 14px 'Open Sans', Arial sans-serif;
 }
@@ -135,7 +135,7 @@ body {
 	text-align: center;
 	font-size: 15px;
 	font-weight: bold;
-	color:#ffff
+	
 }
 
 .cars-category ul li a {
