@@ -135,12 +135,13 @@ body {
 	text-align: center;
 	font-size: 15px;
 	font-weight: bold;
+	color:#ffff
 }
 
 .cars-category ul li a {
 	display: block;
 	padding: 5px 50px;
-	color:#ffff
+
 
 }
 
