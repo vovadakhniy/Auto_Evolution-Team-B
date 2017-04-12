@@ -1,0 +1,151 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	width: 100%;
+	min-height: 100%;
+	color:#ffff;
+	background-color: #ebe3dc;
+	font: 14px 'Open Sans', Arial sans-serif;
+}
+
+
+.header-top-row {
+	height: 60px;
+	background-color: #b34549;
+	border-bottom: 2px solid #ffff;
+}
+
+.menu-bar {
+	height: 60px;
+	background-color: #e3c49c;
+	border-bottom: 2px solid #ffff;
+	padding: 0 350px;
+}
+
+@media screen and (max-width: 1460px) and (min-width: 1200px) {
+	.menu-bar {
+		padding: 0 150px;
+	}
+}
+
+@media screen and (max-width: 1800px) and (min-width: 1460px) {
+	.menu-bar {
+		padding: 0 200px;
+	}
+}
+
+.menu-bar ul {
+	display: flex;
+	list-style: none;
+}
+
+
+.menu-bar ul li {
+	display: inline-block;
+	margin: 0 auto;
+	padding: 15px 0;
+
+}
+
+.menu-bar ul li a {
+	text-decoration: none;
+	font-size: 20px;
+	color: #602e37;
+	font-weight: bold;
+}
+
+.main-logo img  {
+	height: 180px;
+	position: relative;
+	bottom: 73px;
+	z-index: 1;
+}
+
+.menu-bar ul li a:hover {
+	border-bottom: 2px dashed #603030;
+	transition: all linear .1s;
+}
+
+/*Carousel*/
+.carousel {
+	position: relative;
+}
+
+.mySlides {
+	width: 100%;
+}
+.prev-left {
+	position: absolute;
+	top: 50%;
+	left: 0%;
+}
+
+.next-right {
+	position: absolute;
+	top: 50%;
+	right: 0%;
+}
+
+.button {
+	padding: 10px;
+	font-size:20px;
+	cursor: pointer;
+	background-color:rgb(192,192,192);opacity:0.1;
+}
+
+.button:hover {
+	background-color: rgb(255, 255, 255);
+	color: rgb(255, 0, 255);
+}
+
+/*Main-navigation*/
+.cars-category {
+	width: 100%;
+	height: 16%;
+	background-color: rgba(0, 0, 0, .6);
+	text-align: center;
+	position: absolute;
+	top: 84%;
+}
+
+@media screen and (max-width: 1460px) and (min-width: 1200px) {
+	.cars-category {
+		height: 24%;
+		top: 76%;
+	}
+}
+
+@media screen and (max-width: 1800px) and (min-width: 1460px) {
+	.cars-category {
+		height: 20%;
+		top: 80%;
+	}
+}
+
+.cars-category ul {
+	list-style-type: none;
+	display: inline-block;
+}
+
+.cars-category ul li {
+	float: left;
+	text-align: center;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.cars-category ul li a {
+	display: block;
+	padding: 5px 50px;
+
+}
+
+.cars-category ul li a:hover {
+	background-color: rgba(255, 255, 255, 0.075);
+	box-shadow: 1px 1px 20px rgba(255, 255, 255, .5);
+	margin: 10px;
+	transition: all linear 0.3s;
+}
