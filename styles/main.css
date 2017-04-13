@@ -156,18 +156,43 @@ body {
 }
 /*Main-Content*/
 .history {
-	display: inline-block;
-	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 150px 0;
+}
+
+
+
+.history-logo img {
+	filter: grayscale(80%);
+}
+
+.history-logo img:hover {
+	filter: none;
+	cursor: pointer;
 }
 
 .description {
-	float:left;
-	width: 45%;
-	border:1px solid green;
-}
-.evolution-video {
-	float: left;
-	width: 54%;
-	border:1px solid red;
+	width: 500px;
+	color: #595654;
+	line-height: 25px;
+	text-align: justify;
+	word-spacing: 4px;
+	text-indent: 25px;
 }
 
+p::first-letter {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+
+
+.gallery {
+	position: relative;
+	top: 1000px;
+	height: 200px;
+	background-image: url(../img/footer-bgr.png);
+	background-position: top center;
+}
