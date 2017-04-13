@@ -12,27 +12,32 @@ body {
 }
 
 /*Header*/
-.header-top-row {
-	height: 60px;
-	background-color: #b34549;
-	border-bottom: 2px solid #ffff;
-}
-
 .menu-bar {
+	margin-top: 60px;
 	height: 60px;
 	background-color: #e3c49c;
-	border-bottom: 2px solid #ffff;
-	padding: 0 350px;
+	border-bottom: 2px solid #ffffff;
+	position: relative;
+}
+
+.menu-bar:before {
+	content: "";
+	background-color:  #b34549;
+	border-bottom: 2px solid #ffffff;
+	top: -60px;
+	height: 60px;
+	width: 100%;
+	position: absolute;
 }
 
 @media screen and (max-width: 1460px) and (min-width: 1200px) {
-	.menu-bar {
+	.menu-bar ul {
 		padding: 0 150px;
 	}
 }
 
 @media screen and (max-width: 1800px) and (min-width: 1460px) {
-	.menu-bar {
+	.menu-bar ul {
 		padding: 0 200px;
 	}
 }
@@ -40,6 +45,7 @@ body {
 .menu-bar ul {
 	display: flex;
 	list-style: none;
+	padding: 0 350px;
 }
 
 
@@ -47,7 +53,6 @@ body {
 	display: inline-block;
 	margin: 0 auto;
 	padding: 15px 0;
-
 }
 
 .menu-bar ul li a {
@@ -60,7 +65,7 @@ body {
 .main-logo img  {
 	height: 180px;
 	position: relative;
-	bottom: 73px;
+	bottom: 72px;
 	z-index: 1;
 }
 
@@ -77,26 +82,27 @@ body {
 .mySlides {
 	width: 100%;
 }
-.prev-left {
+.prev {
 	position: absolute;
 	top: 50%;
 	left: 0%;
 }
 
-.next-right {
+.next {
 	position: absolute;
 	top: 50%;
 	right: 0%;
 }
 
-.button {
+.button-auto {
 	padding: 10px;
 	font-size:20px;
 	cursor: pointer;
-	background-color:rgb(192,192,192);opacity:0.1;
+	background-color:rgb(192,192,192);
+	opacity:0.1;
 }
 
-.button:hover {
+.button-auto:hover {
 	background-color: rgb(255, 255, 255);
 	color: rgb(255, 0, 255);
 }
@@ -135,14 +141,11 @@ body {
 	text-align: center;
 	font-size: 15px;
 	font-weight: bold;
-	
 }
 
 .cars-category ul li a {
 	display: block;
 	padding: 5px 50px;
-
-
 }
 
 .cars-category ul li a:hover {
@@ -151,3 +154,20 @@ body {
 	margin: 10px;
 	transition: all linear 0.3s;
 }
+/*Main-Content*/
+.history {
+	display: inline-block;
+	width: 100%;
+}
+
+.description {
+	float:left;
+	width: 45%;
+	border:1px solid green;
+}
+.evolution-video {
+	float: left;
+	width: 54%;
+	border:1px solid red;
+}
+
