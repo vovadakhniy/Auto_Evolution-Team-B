@@ -9,6 +9,9 @@
 	<link rel="stylesheet" href="styles/main.css">
 	<link rel="stylesheet" href="styles/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="styles/owl.carousel.min.css">
+	<link rel="stylesheet" href="styles/owl.theme.default.min.css">
+	<link rel="stylesheet" href="styles/lightbox.min.css">
 </head>
 <body>
 	<header class="main-header">
@@ -39,7 +42,6 @@
 		</nav>
 	</div>
 </header>
-
 <main class="content">
 	<section class="history">
 		<div class="history-logo">
@@ -51,15 +53,74 @@
 
 			<p>Перший автомобіль в Україні з'явився в 1891 році в Одесі, його власником був видавець і редактор «Одеського листка» Василь Васильович Навроцький.</p>
 		</div>
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/nPMM5_oLKWs" frameborder="0" allowfullscreen></iframe>
+		<div class="video-container">
+			<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/nPMM5_oLKWs" frameborder="0" allowfullscreen></iframe>
+		</div>
 	</section>
-	<article class="gallery">
-
-	
+	<article id="slider-gallery">
+		<div class="owl-carousel owl-theme">
+			<div class="item"><a href="img/gallery/Full Size/austin.jpg" name="top" data-lightbox="image-1"><img src="img/gallery/Small/austin-preview.jpg" alt="Owl Image"></a></div>
+			<div class="item"><a href="img/gallery/Full Size/beetle.jpg" data-lightbox="image-1"><img src="img/gallery/Small/beetle-preview.jpg" alt="Owl Image"></a></div>
+			<div class="item"><img src="img/gallery/Small/cadillac-preview.jpg" alt="Owl Image"></div>
+			<div class="item"><img src="img/gallery/Small/classic-car-preview.jpg" alt="Owl Image"></div>
+			<div class="item"><img src="img/gallery/Small/austin-preview.jpg" alt="Owl Image"></div>
+			<div class="item"><img src="img/gallery/Small/beetle-preview.jpg" alt="Owl Image"></div>
+			<div class="item"><img src="img/gallery/Small/cadillac-preview.jpg" alt="Owl Image"></div>
+			<div class="item"><img src="img/gallery/Small/classic-car-preview.jpg" alt="Owl Image"></div>
+			<div class="item"><img src="img/gallery/Small/classic-car-preview.jpg" alt="Owl Image"></div>
+			<div class="item"><img src="img/gallery/Small/austin-preview.jpg" alt="Owl Image"></div>
+			<div class="item"><img src="img/gallery/Small/beetle-preview.jpg" alt="Owl Image"></div>
+			<div class="item"><img src="img/gallery/Small/cadillac-preview.jpg" alt="Owl Image"></div>
+			<div class="item"><img src="img/gallery/Small/classic-car-preview.jpg" alt="Owl Image"></div>
+			<div class="item"><img src="img/gallery/Small/beetle-preview.jpg" alt="Owl Image"></div>
+			<div class="item"><img src="img/gallery/Small/cadillac-preview.jpg" alt="Owl Image"></div>
+			<div class="item"><img src="img/gallery/Small/classic-car-preview.jpg" alt="Owl Image"></div>
+		</div>
 	</article>
-
-
 </main>
+<footer class="main-footer">
+	<div class="container">
+		<div class="contacts">
+			<h2>Контактна інформація</h2>
+			<p>iT cluster Івано-Франківськ<br>
+				вул.Чорновола, буд. 125а<br>
+				76010 Івано-Франківськ<br>
+				Україна<br>
+				Телефон: +38 093 92 74 934 <br>
+				E-mail: info@it-cluster.if.ua </p>
+			</div>
+			<div class="form">
+				<form id="contact-form" action="mailto:vova.dakhniy@gmail.com" method="post">
+					<fieldset>
+						<legend align="center">Напишіть нам</legend>
+						<input type="text" id="name-firstname" name="name-firstname"  placeholder="Ваше ім'я"/>
+						<input type="email" id="email" name="email"  placeholder="Електронна почта"/>
+						<input type="tel" id="phone" name="phone"  placeholder="Номер телефону"/>
+						<textarea   id="text-text" name="text-text" maxlength="300" placeholder="Ваше повідомлення"></textarea>
+						<button id="submit-button" type="submit">Відправити</button>
+					</fieldset>
+				</form>
+			</div>
+			<div class="social">
+				<h2>Ми в соціальних мережах</h2>
+				<nav class="icons-social">  
+					<ul>
+						<li><a class="fa fa-facebook-square fa-3x" aria-hidden="true"  href="https://www.facebook.com/vova.dakhniy" target="_bank"></a></li>
+						<li><a class="fa fa-vk  fa-3x " aria-hidden="true" href="https://vk.com/dakhniy87" target="_bank"></a></li>
+						<li><a class="fa fa-envelope-o fa-3x" aria-hidden="true" href="mailto:vova.dakhniy@gmail.com" target="_bank"></a></li>
+						<li><a class="fa fa-github fa-3x" aria-hidden="true"  href="https://github.com/vovadakhniy/Auto_Evolution-Team-B" target="_bank"></a></li>
+					</ul>			
+				</nav> 
+				<h2 class="team">
+					<a href="https://github.com/vovadakhniy/Auto_Evolution-Team-B">© Created by Web UI Team B</a>
+				</h2>
+			</div>
+		</div>
+	</footer> 
+	<script src="javascript/carousel.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="javascript/owl.carousel.min.js"></script>
+	<script src="javascript/gallery-slader.js"></script>
+	<script src="javascript/lightbox.js"></script>
 </body>
-<script src="javascript/carousel.js"></script>
 </html>

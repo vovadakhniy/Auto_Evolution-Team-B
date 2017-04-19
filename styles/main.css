@@ -30,6 +30,12 @@ body {
 	position: absolute;
 }
 
+.menu-bar ul {
+	display: flex;
+	list-style: none;
+	padding: 0 350px;
+}
+
 @media screen and (max-width: 1460px) and (min-width: 1200px) {
 	.menu-bar ul {
 		padding: 0 150px;
@@ -41,13 +47,6 @@ body {
 		padding: 0 200px;
 	}
 }
-
-.menu-bar ul {
-	display: flex;
-	list-style: none;
-	padding: 0 350px;
-}
-
 
 .menu-bar ul li {
 	display: inline-block;
@@ -119,8 +118,8 @@ body {
 
 @media screen and (max-width: 1460px) and (min-width: 1200px) {
 	.cars-category {
-		height: 24%;
-		top: 76%;
+		height: 23%;
+		top: 77%;
 	}
 }
 
@@ -162,10 +161,39 @@ body {
 	padding: 150px 0;
 }
 
+.video-container {    /*Adaptive*/
+	position: relative;
+	width: 100%;
+	height: 100%;
+	padding-bottom: 56.25%;
+	max-width:650px;
 
+}
+
+.video {
+	position: absolute;
+	top: -150px;
+	width: 100%;
+
+}
+
+@media screen and (max-width: 1460px) and (min-width: 1200px) {
+	.history img {
+		width: 400px;
+		filter: grayscale(80%);
+		transition: all linear 0.3s;
+	}
+}
+/*
+iframe, object, embed {
+    max-width: 100%;
+}
+
+/*Adaptive*/
 
 .history-logo img {
 	filter: grayscale(80%);
+	transition: all linear 0.3s;
 }
 
 .history-logo img:hover {
@@ -187,12 +215,121 @@ p::first-letter {
 	font-weight: bold;
 }
 
-
-
-.gallery {
-	position: relative;
-	top: 1000px;
-	height: 200px;
-	background-image: url(../img/footer-bgr.png);
-	background-position: top center;
+.item img {
+	border-radius:10px;
 }
+.owl-carousel{
+	padding: 40px 40px 0;
+}
+#slider-gallery {
+	background: url(../img/gallery-bgr.png) center no-repeat ;
+	border-bottom:3px solid white;
+	border-top:3px solid white;
+}
+
+/*Footer*/
+
+.main-footer {
+	height:420px;
+	width: 100%;
+	background: url(../img/footer-bgr.png) center no-repeat;
+	background-size: 100% 100%;
+	opacity: 0.60;
+	margin-top: 200px;
+}
+
+.container {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.container h2, legend {
+	font: 25px 'Open Sans', Arial sans-serif;
+	line-height: 55px;
+}
+
+.contacts {
+	line-height: 25px;
+	text-align: center;
+	word-spacing: 4px;
+}
+
+.form {
+	width: 350px;
+}
+
+#contact-form input,textarea{
+	padding: 5px;
+	margin: 5px 25px 10px;
+	width: 80%;
+	border-radius: 5px;	
+	background-color: rgba(128, 128, 128, .3);
+	color:#FFFAF0;
+	font: 14px 'Open Sans', Arial sans-serif;
+}
+
+fieldset {
+	border: 2px solid #fff;
+	border-radius: 15px;
+}
+
+textarea {
+	resize: none;
+	padding-bottom:50px;
+}
+
+#submit-button {
+	background-color: #0c9a8c;
+	font-size: 20px;
+	width: 40%;
+	margin:0 0 10px 25px;
+	padding: 5px;
+	cursor: pointer;
+	border-radius: 5px;
+	transition:  0.5s ease;
+	color: #ffffff;
+}
+
+#submit-button:hover { 
+	background-color: #4AD3C6;
+}
+
+.icons-social {
+	padding:20px 0;
+}
+
+.icons-social ul li {
+	display: inline-block;  
+}
+
+.icons-social ul li a {
+	color: #FDFFF6;
+	line-height: 15px;
+	font-size: 20px;
+	padding: 17px;
+	text-decoration: none;
+}
+
+.fa  {
+
+	width: 16px;
+	height: 16px;
+	border-radius: 100%;
+	border: solid 2px rgba(255, 255, 255, 0.25);
+	background-color: rgba(255, 255, 255, 0.075);
+	margin-right: 40px;
+}
+
+.fa:hover {
+	background-color: rgba(255, 255, 255, 0.25);
+}
+
+.team a {
+	color: #ffffff;
+}
+
+
+
