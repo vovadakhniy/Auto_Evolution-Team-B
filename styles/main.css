@@ -235,7 +235,9 @@ p::first-letter {
 	background: url(../img/footer-bgr.png) center no-repeat;
 	background-size: 100% 100%;
 	opacity: 0.90;
+	border-top:3px solid white;
 	margin-top: 200px;
+	position: relative;
 }
 
 .container {
@@ -272,6 +274,24 @@ p::first-letter {
 	font: 14px 'Open Sans', Arial sans-serif;
 }
 
+.main-footer input::placeholder,
+.main-footer textarea::placeholder {
+	color: #ffffff;
+}
+
+::-moz-placeholder {
+	opacity: 1;
+}
+
+.main-footer input:focus::-webkit-input-placeholder { color:transparent; }
+.main-footer input:focus::-moz-placeholder { color:transparent; }
+.main-footer textarea:focus::-webkit-input-placeholder { color:transparent; }
+.main-footer textarea:focus::-moz-placeholder { color:transparent; }
+
+input:required {
+   box-shadow: none;
+}
+
 fieldset {
 	border: 2px solid #fff;
 	border-radius: 15px;
@@ -280,6 +300,10 @@ fieldset {
 textarea {
 	resize: none;
 	padding-bottom:50px;
+}
+
+legend {
+	padding: 0 5px;
 }
 
 #submit-button {
@@ -294,15 +318,6 @@ textarea {
 	color: #ffffff;
 }
 
-.main-footer input::placeholder,
-.main-footer textarea::placeholder {
-	color: #ffffff;
-}
-
-::-moz-placeholder {
-	opacity: 1;
-}
-
 #submit-button:hover { 
 	background-color: #4AD3C6;
 }
@@ -312,7 +327,8 @@ textarea {
 }
 
 .icons-social ul li {
-	display: inline-block;  
+	display: inline-block;
+
 }
 
 .icons-social ul li a {
@@ -324,17 +340,20 @@ textarea {
 }
 
 .fa  {
-
 	width: 16px;
 	height: 16px;
 	border-radius: 100%;
 	border: solid 2px rgba(255, 255, 255, 0.9);
 	background-color: rgba(255, 255, 255, 0.15);
 	margin-right: 40px;
+	transition: ease-in-out 0.3s;
+	padding-right: 10px;
 }
 
 .fa:hover {
 	background-color: rgba(255, 255, 255, 0.65);
+	color: #1B7CD5;
+	transform: scale(0.9, 0.9);
 }
 
 .team a {
