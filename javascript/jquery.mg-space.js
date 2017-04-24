@@ -42,7 +42,7 @@
                 },
                 {
                     breakpoint: 1200,
-                    column: 4
+                    column: 3
                 }
             ],
 
@@ -320,7 +320,7 @@
                 $('.mg-space').addClass('mg-space-open');
                 if (_.options.useIndicator) {
                     $('.mg-indicator').css({
-                        left: itemPosition.left + parseInt($(element).css('padding-left')) + $(element).width()/2 - 10,
+                        left: itemPosition.left + parseInt($(element).css('padding-left')) + parseInt($(element).css('margin-left')) + $(element).width()/2 - 10,
                     });
                     $('.mg-indicator').animate({top:-9}, 200);
                 }
@@ -367,7 +367,7 @@
                 }, 200, function () {
                     if (_.options.useIndicator) {
                         $('.mg-indicator').css({
-                            left: itemPosition.left + parseInt($(element).css('padding-left')) + $(element).width()/2 - 10,
+                            left: itemPosition.left + parseInt($(element).css('padding-left')) + parseInt($(element).css('margin-left')) + $(element).width()/2 - 10,
                         });
                         $('.mg-indicator').animate({top:-9}, 200);
                     }

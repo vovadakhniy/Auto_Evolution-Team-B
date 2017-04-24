@@ -361,11 +361,16 @@ legend {
 
 
 /*GALLERY*/
+.main-gallery {
+	width: 80%;
+	margin-left: 10%;
+}
+
 .gallery-name {
 	position: relative;
 	padding-top: 70px;
 	padding-bottom: 50px;
-	color: #46433f;
+	color: #595654;
 	font-size: 40px;
 	line-height: 20px;
 	text-align: center;
@@ -383,7 +388,7 @@ legend {
 	top: 34%;
 	width: 67px;
 	height: 1px;
-	background: #666666;
+	background: #595654;
 }
 
 .gallery-name span::after {
@@ -394,12 +399,16 @@ legend {
 	top: 34%;
 	width: 67px;
 	height: 1px;
-	background: #666666;
+	background: #595654;
+}
+
+.row-flex {
+	justify-content: center;
 }
 
 .demo-item img {
-	-webkit-transform: scale(0.8); 
-	-moz-transform: scale(0.8); 
+	-webkit-transform: scale(0.9); 
+	-moz-transform: scale(0.9); 
 	-webkit-transition-duration: 0.5s; 
 	-moz-transition-duration: 0.5s; 
 	opacity: 0.7; 
@@ -407,16 +416,24 @@ legend {
 }
 
 .demo-item img:hover {
-	-webkit-transform: scale(1.2); 
-	-moz-transform: scale(1.2); 
+	-webkit-transform: scale(1.4); 
+	-moz-transform: scale(1.4); 
 	box-shadow:0px 0px 30px gray; 
 	-webkit-box-shadow:0px 0px 30px gray; 
 	-moz-box-shadow:0px 0px 30px gray; 
 	opacity: 1;
 }
 
-div.desc {
-    position: absolute;
-    left: 32%;
-    z-index: 3;
+.category-name {
+    color: #595654;
+    text-align: center;
 }
+
+.mg-row {
+	 -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; 
+}
+
+.img-responsive, .demo-item img {
+	border-radius: 15px;
+}
+
