@@ -115,6 +115,16 @@ h3{
   }
 }
 
+@media only screen and (min-device-width: 640px){
+  .main-container{
+    margin-left: 1.5%;
+    margin-bottom: 10px;
+  }
+  .picture{
+    padding-left: 10px;
+  }
+}
+
 @media only screen and (min-device-width: 768px) and (max-device-width: 1023px) {
   .main-container{
     margin-left: 1.3%;
